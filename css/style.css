@@ -135,3 +135,49 @@ hr{
     padding: 1px 5px;
     color: #dc4a4a;
 }
+/* ------------------
+  media query style
+  -------------------*/
+  /* mobile devices  */
+  @media only screen and (max-width:688px){
+      .contanir{
+          width: 100%;
+      }
+      .players,.blogs{
+          
+          grid-template-columns: repeat(2,1fr);
+          
+      }
+      .player,.blogs{
+          flex-direction: column;
+          justify-content: center;
+      }
+      .player-name{
+        margin-left: 0px;
+    }
+      .top-blog{
+        flex-direction: column;
+
+      }
+      .courses{
+        grid-template-columns: repeat(1,1fr);
+       
+
+      }
+     
+      
+  }
+   /* i pad devices  */
+   @media only screen and (min-width:688px) and (max-width:992px){
+       .contanir{
+           width: 100%;
+       }
+       .players{
+           grid-template-columns: repeat(2,1fr);
+         
+       }
+       .player{
+           align-items: center;
+           justify-content: center;
+       }
+   }
